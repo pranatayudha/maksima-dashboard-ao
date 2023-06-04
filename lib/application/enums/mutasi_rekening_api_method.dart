@@ -1,0 +1,4 @@
+enum MutasiRekeningAPIMethod {
+  add,
+  update,
+}

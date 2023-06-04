@@ -1,0 +1,4 @@
+enum LegalitasUsahaAPIMethod {
+  addDocument,
+  updateDocument,
+}

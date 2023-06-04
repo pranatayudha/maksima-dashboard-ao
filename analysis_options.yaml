@@ -1,0 +1,51 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/app.router.dart"
+    - "**/app.locator.dart"
+    - "**/app.logger.dart"
+    - "**/test_setup.mocks.dart"
+  errors:
+    todo: ignore
+    invalid_annotation_target: ignore
+  plugins:
+    - dart_code_metrics
+
+linter:
+  rules:
+    prefer_single_quotes: true
+    prefer_const_constructors: true
+    sort_child_properties_last: true
+    sort_pub_dependencies: false
+    always_declare_return_types: true
+    require_trailing_commas: true
+    flutter_style_todos: true
+    avoid_function_literals_in_foreach_calls: false
+    avoid_classes_with_only_static_members: false
+    use_setters_to_change_properties: false
+    file_names: false
+    depend_on_referenced_packages: false
+    noop_primitive_operations: false
+    library_prefixes: false
+    use_build_context_synchronously: false
+
+dart_code_metrics:
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+  metrics:
+    cyclomatic-complexity: 20
+    maximum-nesting-level: 5
+    number-of-parameters: 4
+    source-lines-of-code: 120
+  metrics-exclude:
+    - test/**
+  rules:
+    - newline-before-return
+    - no-boolean-literal-compare
+    - no-empty-block
+    - prefer-trailing-comma
+    - no-equal-then-else

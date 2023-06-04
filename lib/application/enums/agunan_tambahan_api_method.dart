@@ -1,0 +1,4 @@
+enum AgunanTambahanAPIMethod {
+  add,
+  update,
+}

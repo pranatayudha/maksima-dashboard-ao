@@ -1,0 +1,4 @@
+enum SLIKType {
+  customer,
+  partner,
+}

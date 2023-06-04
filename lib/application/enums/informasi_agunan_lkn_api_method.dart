@@ -1,0 +1,4 @@
+enum InformasiAgunanLKNAPIMethod {
+  add,
+  update,
+}
